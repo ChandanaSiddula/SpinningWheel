@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Document</title>
+   <style>
+    body{
+        background-image: url(../images/DORCEV\ 10x8ft\ Neon\ Glow\ in\ The\ Dark\ Party\ Decoration\ Backdrop\ Background\ Glow\ Birthday\ Photography\ Backdrop\ Retro\ Rock\ Pop\ Music\ Party\ Neon\ Glow\ Splatter\ Modern\ Hip\ Hop\ Disco\ Party\ Portrait\ Banner.png);
+        background-repeat: no-repeat;
+       background-size: cover;
+       display: flex;
+    }
+    #wheel{
+        align-items: center;
+        position: absolute;
+        margin-top: 10%;
+        width: 1700px;
+        height: 1700px;
+        margin-left: 20%;
+        filter: drop-shadow(20px 20px 20px black);
+        
+    }
+    #arrow{
+        position: absolute;
+        align-items: center;
+        width: 1000px;
+        height: 300px;
+        margin-top: 23%;
+        margin-left: 51%;
+        filter: drop-shadow(20px 20px 20px black);
+
+    }
+    #spin{
+        width: 1000px;
+        height: 200px;
+        align-items: center;
+        margin-top: 24%;
+        margin-left: 72%;
+        text-align: center;
+        font-size: 70px;
+        font-weight: bolder;
+        background-color: red;
+        color: white;
+        text-align:center;
+        border: 30px dotted yellow;
+        outline: 30px double red;
+        letter-spacing: 20px;
+        filter: drop-shadow(20px 20px 20px black);
+
+    }
+
+   </style>
+</head>
+<body>
+    <img src="../images/wheel.png" id="wheel">
+    <img src="../images/arrow.png" id="arrow">
+    <input type="button" id="spin" value="Lucky Spin!!!" onclick="spinning()">
+    <script>
+        function spinning()
+        {
+           var num=Math.floor(Math.random()*360)
+           document.getElementById("wheel").style.transition="rotate 5s"
+           document.getElementById("wheel").style.rotate=num*10+"deg"
+            
+        }
+    </script>
+
+</body>
+</html>
